@@ -12,8 +12,12 @@
 
 		#timeElapsed {
 			text-align: center;
-			margin-top: 100px;
+			margin-top: 50px;
 			font-family: "Comic Sans MS";
+		}
+
+		#hide{
+			color:#FFFFFF;
 		}
 	</style>
 
@@ -73,10 +77,10 @@
 			// End
 			var isBirthday = (now.getDate() == 28 && now.getMonth() + 1 == 5);
 			if(isBirthday){
-				var endStr = "<br/> + <img src = 'images/cake.png'/>"
+				var endStr = "Happy Birthday! <br/> <img src = 'images/cake.png'/>"
 			}
 			else{
-				var endStr = "<br/>Sorry...";
+				var endStr = "Thanks : D";
 			}
 
 			// Combine
@@ -87,7 +91,7 @@
 			if(hours > 0) out.push(hours + " Hour" + (hours == 1 ? "" : "s"));
 			if(minutes > 0) out.push(minutes + " Minute" + (minutes == 1 ? "" : "s"));
 			if(seconds > 0) out.push(seconds + " Second" + (seconds == 1 ? "" : "s"));
-			return out.join(" ") + endStr;
+			return "<div id = 'hide'>" + out.join(" ") + "</div>" + endStr;
 		}
 
 		window.onload = function(){
