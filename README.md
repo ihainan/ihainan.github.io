@@ -1,4 +1,9 @@
-ihainan.github.io
-=================
+vida
+---------
 
-My Personal Website
+vida is a simple and beautiful jekyll theme.
+You can see demo [here](http://syaningv.com/vida/).
+
+### License
+
+MIT
